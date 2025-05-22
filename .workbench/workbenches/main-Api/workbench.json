@@ -1,0 +1,39 @@
+{
+  "id": "c2189791-befd-42ef-b3c0-1f3027954ab4",
+  "name": "main-api",
+  "description": "php_class",
+  "requests": [],
+  "collections": [
+    {
+      "id": "3f3cc6cd-4562-4a35-ae45-c3ffe177d09f",
+      "name": "users",
+      "requests": [
+        {
+          "id": "b4f70ea6-f631-4a67-bfc6-6b3436101bb7",
+          "name": "index",
+          "type": "HTTP",
+          "data": {
+            "authorization": {
+              "type": "bearer",
+              "token": {
+                "type": "raw",
+                "key": "token",
+                "value": ""
+              }
+            },
+            "method": "POST",
+            "url": "http://localhost:8000/",
+            "headers": [],
+            "headersAutoRefresh": false,
+            "parameters": [],
+            "parametersAutoRefresh": false,
+            "body": {
+              "type": "application/json",
+              "body": "{\n  \"foo\": \"bar\"\n}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
